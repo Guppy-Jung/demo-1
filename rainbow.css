@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  /* body默认有margin,所以要去掉 */
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: white;
+}
+.rainbow {
+  height: 200px;
+  overflow: hidden;
+}
+.rainbow div {
+  /* 所有div去除border后，会导致垂直方向margin合并，内层的div元素全部顶上来，所以要给所有div设置overflow:hidden */
+  overflow: hidden;
+}
+.rainbow > div {
+  /* 表示class为rainbow的元素的里面的第一个div */
+  /* border: 1px solid hsl(0, 50%, 50%); */
+  /*  #ff0000和hsl(0, 50%, 50%)都是正红 */
+  width: 400px;
+  height: 400px;
+  background: red;
+  border-radius: 50%;
+}
+.rainbow > div > div {
+  /* border: 1px solid hsl(60, 50%, 50%); */
+  background: hsl(60, 50%, 50%);
+  height: 380px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.rainbow > div > div > div {
+  /* border: 1px solid hsl(120, 50%, 50%); */
+  background: hsl(120, 50%, 50%);
+  height: 360px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.rainbow > div > div > div > div {
+  /* border: 1px solid hsl(180, 50%, 50%); */
+  background: hsl(180, 50%, 50%);
+  height: 340px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.rainbow > div > div > div > div > div {
+  /* border: 1px solid hsl(240, 50%, 50%); */
+  background: hsl(240, 50%, 50%);
+  height: 320px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.rainbow > div > div > div > div > div > div {
+  /* border: 1px solid hsl(300, 50%, 50%); */
+  background: hsl(300, 50%, 50%);
+  height: 300px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.rainbow > div > div > div > div > div > div > div {
+  /* border: 1px solid hsl(360, 50%, 50%); */
+  background: hsl(360, 50%, 50%);
+  height: 280px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.rainbow > div > div > div > div > div > div > div > div {
+  /* border: 1px solid hsl(360, 80%, 100%); */
+  background: hsl(360, 80%, 100%);
+  height: 260px;
+  margin: 10px;
+  border-radius: 50%;
+}
